@@ -1,4 +1,12 @@
 Welcome to the behave_parallel_demo wiki!
+#### Must do 
+How what want to manage virtual env but make sure you are following these steps
+* `virtualenv .env `
+* `source .env/bin/activate `
+* `pip install -r requirements.txt`
+* `pip install  git+git://github.com/hugeinc/behave-parallel.git@a57eff3087aae9bd7519a7d4fc15228611db20b9#egg=behave-parallel --upgrade` ### Super importent
+
+
 
 ##Works exact steps on Ubuntu:
 
@@ -10,6 +18,8 @@ Welcome to the behave_parallel_demo wiki!
 * `virtualenv .env `
 * `source .env/bin/activate `
 * `pip install -r requirements.txt`
+* `pip install  git+git://github.com/hugeinc/behave-parallel.git@a57eff3087aae9bd7519a7d4fc15228611db20b9#egg=behave-parallel --upgrade` ### Super importent
+* `pip freeze`
 
 ###Run Features in parallel
 `/usr/bin/time behave --processes 5 --parallel-element feature `
