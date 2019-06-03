@@ -16,7 +16,6 @@ How what want to manage virtual env but make sure you are following these steps
 * `pip install  git+git://github.com/hugeinc/behave-parallel.git@a57eff3087aae9bd7519a7d4fc15228611db20b9#egg=behave-parallel --upgrade` ### Super importent
 
 
-
 ##Works exact steps on Ubuntu:
 
 ### Steps: 
