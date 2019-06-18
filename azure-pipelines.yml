@@ -1,0 +1,35 @@
+# Python package
+# Create and test a Python package on multiple Python versions.
+# Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/python
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+strategy:
+  matrix:
+    Python27:
+      python.version: '2.7'
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '$(python.version)'
+  displayName: 'Use Python $(python.version)'
+
+- script: |
+    python -m pip install --upgrade pip
+    python --version
+    pip install virtualenv
+    virtualenv .env
+    source .env/bin/activate
+    pip install -r requirements.txt
+    pip install git+git://github.com/hugeinc/behave-parallel.git@a57eff3087aae9bd7519a7d4fc15228611db20b9#egg=behave-parallel --upgrade
+    pip freeze
+  displayName: 'Install dependencies'
+
+- script: |
+    behave --processes 5 --parallel-element feature
+  displayName: 'Parallel behave tests'
