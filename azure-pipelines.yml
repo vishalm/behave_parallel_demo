@@ -31,5 +31,6 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
+    source .env/bin/activate
     behave --processes 5 --parallel-element feature
   displayName: 'Parallel behave tests'
