@@ -2,6 +2,8 @@
   <a href="https://twitter.com/intent/follow?screen_name=vishalm84"><img align="left" src="https://img.shields.io/twitter/follow/vishalm84.svg?style=social&label=Follow%20@vishalm84" alt="Follow on Twitter"></a>
 <br />
 </p>
+[![Actions Status](https://github.com/vishalm/behave_parallel_demo/workflows/CI/badge.svg)](https://github.com/vishalm/behave_parallel_demo/actions)
+
 
 [![Build Status](https://dev.azure.com/vishalmishra84/Test%20Project/_apis/build/status/vishalm.behave_parallel_demo?branchName=master)](https://dev.azure.com/vishalmishra84/Test%20Project/_build/latest?definitionId=2&branchName=master)
 
