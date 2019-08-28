@@ -8,7 +8,7 @@
 
 | CI Provider  | Build Status | Time Taken(Approx) |
 | ------------- | ------------- | ------------- |
-| **Github Actions**  | [![GitHub Actions status](https://github.com/vishalm/behave_parallel_demo/workflows/CI/badge.svg)](https://launch-editor.github.com/actions?workflowID=Python%20package&event=push&nwo=vishalm%2Fbehave_parallel_demo)| 40+ Sec|
+| **Github Actions**  | [![GitHub Actions status](https://github.com/vishalm/behave_parallel_demo/workflows/CI/badge.svg)](https://launch-editor.github.com/actions?workflowID=CI=push&nwo=vishalm%2Fbehave_parallel_demo)| 40+ Sec|
 | **Azure DevOps**  | [![Build Status](https://dev.azure.com/vishalmishra84/Test%20Project/_apis/build/status/vishalm.behave_parallel_demo?branchName=master)](https://dev.azure.com/vishalmishra84/Test%20Project/_build/latest?definitionId=2&branchName=master) | 31+ Sec |
 | **Travis** | [![Travis](https://travis-ci.org/vishalm/behave_parallel_demo.svg)](https://travis-ci.org/vishalm/behave_parallel_demo)      | 33+ Sec * http://scribu.net/travis-stats/#vishalm/behave_parallel_demo/master|
 
